@@ -1,0 +1,7 @@
+<h1>Heroes <small>Marvel & DC</small></h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let heroe of heroes; let i = index">
+    <app-heroe-tarjeta (selectedHero)="handleClick($event)" [heroe]="heroe" [index]="i"></app-heroe-tarjeta>
+  </div>       
+</div>

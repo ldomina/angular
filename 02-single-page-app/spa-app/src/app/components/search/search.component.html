@@ -1,0 +1,18 @@
+<h1>Resultado de busqueda</h1>
+
+<div class="row" *ngIf="heroes.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existen resultados.
+        </div>
+    </div>
+    <div class="col-md-6">
+        <button [routerLink]="['/heroes']" class="btn btn-outline-danger">Regresar</button>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let heroe of heroes; let i = index">
+    <app-heroe-tarjeta [heroe]="heroe" [index]="heroe.index"></app-heroe-tarjeta>
+  </div>       
+</div>
