@@ -1,0 +1,22 @@
+.full-size{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100vw;
+    background-color: black;
+}
+.imagen{
+    opacity: .5;
+}
+
+.full-size::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7) !important;
+}

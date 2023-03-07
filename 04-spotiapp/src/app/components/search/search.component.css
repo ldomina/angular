@@ -1,0 +1,9 @@
+.no-outline{
+    outline: none;
+}
+
+.radius{
+    border-radius: 20px;
+    text-indent: 10px;
+    font-weight: 800;
+}
